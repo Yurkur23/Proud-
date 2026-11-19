@@ -130,8 +130,8 @@ upload:
    também usadas durante o build:
    - `DATABASE_URL`: URL pooled do Neon, usada em runtime.
    - `BUILD_DATABASE_URL_UNPOOLED`: URL direta do Neon, usada para aplicar migrations durante o build.
-   - `BUILD_NEXT_PUBLIC_SITE_URL`: URL HTTPS exata do subdomínio que a Discloud atribuir (a URL pode terminar
-     em `.discloud.app` ou `.discloud.dev`).
+   - `NEXT_PUBLIC_SITE_URL`: URL pública usada em runtime: `https://proudlanding.discloud.dev`.
+   - `BUILD_NEXT_PUBLIC_SITE_URL`: a mesma URL, usada durante o build: `https://proudlanding.discloud.dev`.
    - Se precisar criar o administrador em um banco novo durante o build, use `BUILD_ADMIN_EMAIL` e
      `BUILD_ADMIN_PASSWORD` (opcionalmente `BUILD_ADMIN_NAME`). Não configure essas variáveis se o administrador já
      existe no banco.
@@ -143,7 +143,7 @@ upload:
    que já existe está nesse banco; não é necessário criar outra se a Discloud apontar para ele.
 5. Faça o upload da pasta do projeto. O build aplica migrations pendentes e compila o Next.js; se o artefato
    `.next/BUILD_ID` não estiver disponível quando o app iniciar, o inicializador executa `npm run build` antes
-   de iniciar o servidor. O processo escuta em `0.0.0.0:8080`, como exigido pela Discloud. O config reserva 1 GB de RAM.
+   de iniciar o servidor. O processo escuta em `0.0.0.0:8080`, como exigido pela Discloud. O config reserva 2 GB de RAM.
 
 ## Dia a dia
 
