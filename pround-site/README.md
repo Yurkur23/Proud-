@@ -141,8 +141,9 @@ upload:
    enviar credenciais junto com o projeto.
 4. Use o mesmo banco Neon para manter as contas, os projetos e os chamados existentes. A conta administrativa
    que já existe está nesse banco; não é necessário criar outra se a Discloud apontar para ele.
-5. Faça o upload da pasta do projeto. O build aplica migrations pendentes e compila o Next.js; o processo de
-   inicialização escuta em `0.0.0.0:8080`, como exigido pela Discloud. O config reserva 1 GB de RAM.
+5. Faça o upload da pasta do projeto. O build aplica migrations pendentes e compila o Next.js; se o artefato
+   `.next/BUILD_ID` não estiver disponível quando o app iniciar, o inicializador executa `npm run build` antes
+   de iniciar o servidor. O processo escuta em `0.0.0.0:8080`, como exigido pela Discloud. O config reserva 1 GB de RAM.
 
 ## Dia a dia
 
