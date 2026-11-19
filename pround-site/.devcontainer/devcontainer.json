@@ -1,0 +1,15 @@
+{
+  "name": "Pround Site (Next.js + Postgres)",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": { "label": "Dev (npm run dev)", "onAutoForward": "openBrowser" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["bradlc.vscode-tailwindcss"],
+      "settings": { "editor.formatOnSave": true }
+    }
+  }
+}

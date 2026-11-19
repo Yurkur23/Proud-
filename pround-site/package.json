@@ -1,0 +1,37 @@
+{
+  "name": "pround-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page Pround — venda de sites com propósito (Next.js + Tailwind)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/migrate.mjs --if-configured && next build",
+    "start": "next start",
+    "start:discloud": "node scripts/discloud-start.mjs",
+    "db:migrate": "node scripts/migrate.mjs",
+    "admin:seed": "node scripts/seed-admin.mjs",
+    "admin:promote": "node scripts/promote-admin.mjs",
+    "check:deploy": "node scripts/check-deploy.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "24.12.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "better-auth": "^1.7.25",
+    "next": "16.4.6",
+    "pg": "^8.23.1",
+    "postcss": "^8.5.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwindcss": "^4.0.0",
+    "typescript": "6.0.3",
+    "zod": "^4.6.7"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.23.1"
+  }
+}
