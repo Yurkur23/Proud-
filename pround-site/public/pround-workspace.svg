@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Pround digital workspace</title>
+  <desc id="desc">Abstract interface panels in the Pround brand colors</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#163B43"/>
+      <stop offset="1" stop-color="#2C626B"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F7F7F3"/>
+      <stop offset="1" stop-color="#E9E9E4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1060" cy="120" r="230" fill="none" stroke="#C5AD87" stroke-opacity=".35" stroke-width="3"/>
+  <circle cx="1050" cy="130" r="120" fill="#C5AD87" fill-opacity=".12"/>
+  <rect x="110" y="105" width="820" height="570" rx="36" fill="url(#card)"/>
+  <rect x="110" y="105" width="210" height="570" rx="36" fill="#102F36"/>
+  <rect x="150" y="160" width="110" height="20" rx="10" fill="#C5AD87"/>
+  <rect x="150" y="240" width="125" height="13" rx="7" fill="#F7F7F3" fill-opacity=".75"/>
+  <rect x="150" y="285" width="95" height="13" rx="7" fill="#F7F7F3" fill-opacity=".4"/>
+  <rect x="150" y="330" width="115" height="13" rx="7" fill="#F7F7F3" fill-opacity=".4"/>
+  <rect x="370" y="165" width="470" height="35" rx="12" fill="#163B43"/>
+  <rect x="370" y="235" width="205" height="150" rx="24" fill="#C5AD87"/>
+  <rect x="605" y="235" width="235" height="150" rx="24" fill="#D9D7CF"/>
+  <rect x="370" y="425" width="470" height="180" rx="24" fill="#FFFFFF"/>
+  <path d="M410 555c55-95 104-30 160-92s106 63 220-5" fill="none" stroke="#163B43" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="570" cy="463" r="11" fill="#C5AD87"/>
+  <circle cx="790" cy="458" r="11" fill="#C5AD87"/>
+</svg>
