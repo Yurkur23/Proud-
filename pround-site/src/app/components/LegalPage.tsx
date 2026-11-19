@@ -145,15 +145,15 @@ export function LegalPage({
             {language === 'pt-BR'
               ? summary
               : isEnglish
-                ? `This document explains the rules and protections covered by Pround’s ${translatedTitle.toLowerCase()}.`
-                : `Este documento explica las reglas y protecciones cubiertas por la ${translatedTitle.toLowerCase()} de Pround.`}
+                ? `This document explains the rules and protections covered by Proud’s ${translatedTitle.toLowerCase()}.`
+                : `Este documento explica las reglas y protecciones cubiertas por la ${translatedTitle.toLowerCase()} de Proud.`}
           </p>
           <div className="mt-10 rounded-2xl border border-[#C5AD87]/30 bg-[#F0ECE4] p-5 text-xs leading-6 text-[#6F5839]">
             {language === 'pt-BR'
-              ? 'Este documento é um modelo informativo da Pround. e não constitui aconselhamento jurídico. O texto deve ser revisado por profissional qualificado e adaptado aos processos reais.'
+              ? 'Este documento é um modelo informativo da Proud e não constitui aconselhamento jurídico. O texto deve ser revisado por profissional qualificado e adaptado aos processos reais.'
               : isEnglish
-                ? 'This is an informational template from Pround and is not legal advice. A qualified professional must review it and adapt it to actual processes.'
-                : 'Este es un modelo informativo de Pround y no constituye asesoría jurídica. Un profesional calificado debe revisarlo y adaptarlo a los procesos reales.'}
+                ? 'This is an informational template from Proud and is not legal advice. A qualified professional must review it and adapt it to actual processes.'
+                : 'Este es un modelo informativo de Proud y no constituye asesoría jurídica. Un profesional calificado debe revisarlo y adaptarlo a los procesos reales.'}
           </div>
           <div className="mt-10 space-y-10">
             {sections.map((section, index) => (
@@ -184,8 +184,8 @@ export function LegalPage({
                 ) : (
                   <p className="mt-4 text-sm leading-7 text-[#60757A]">
                     {isEnglish
-                      ? `This section describes ${sectionTitles[section.title]?.en.toLowerCase() ?? 'the applicable rules'} for Pround, including the safeguards required by Brazilian law.`
-                      : `Esta sección describe ${sectionTitles[section.title]?.es.toLowerCase() ?? 'las reglas aplicables'} para Pround, incluidas las protecciones exigidas por la legislación brasileña.`}
+                      ? `This section describes ${sectionTitles[section.title]?.en.toLowerCase() ?? 'the applicable rules'} for Proud, including the safeguards required by Brazilian law.`
+                      : `Esta sección describe ${sectionTitles[section.title]?.es.toLowerCase() ?? 'las reglas aplicables'} para Proud, incluidas las protecciones exigidas por la legislación brasileña.`}
                   </p>
                 )}
               </section>
@@ -194,10 +194,10 @@ export function LegalPage({
           <div className="mt-12 border-t border-[#163B43]/10 pt-8 text-xs leading-6 text-[#60757A]">
             <p className="font-semibold text-[#163B43]">
               {language === 'pt-BR'
-                ? 'Contato da Pround.'
+                ? 'Contato da Proud'
                 : isEnglish
-                  ? 'Contact Pround.'
-                  : 'Contacto de Pround.'}
+                  ? 'Contact Proud'
+                  : 'Contacto de Proud'}
             </p>
             <p>
               {language === 'pt-BR'

@@ -102,7 +102,7 @@ export function ProjectBriefForm() {
         </p>
         <div className="mt-9 grid gap-3 sm:grid-cols-3">
           {[
-            ['01', 'Você envia', 'Seu briefing chega organizado para a Pround.'],
+            ['01', 'Você envia', 'Seu briefing chega organizado para a Proud.'],
             ['02', 'Nós analisamos', 'Avaliamos objetivos, recursos e complexidade.'],
             ['03', 'Entramos em contato', 'Apresentamos o melhor caminho para o projeto.'],
           ].map(([number, title, text]) => (

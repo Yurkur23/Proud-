@@ -15,7 +15,7 @@ const serif = Cormorant_Garamond({
   style: ['normal', 'italic'],
 })
 
-const title = 'Pround — Sites com propósito'
+const title = 'Proud — Sites com propósito'
 const description =
   'Sites estratégicos, hospedagem cuidada e suporte contínuo para empresas que querem crescer.'
 

@@ -14,7 +14,7 @@ function createAuth() {
   const isProd = process.env.NODE_ENV === 'production'
 
   return betterAuth({
-    appName: 'Pround',
+    appName: 'Proud',
     secret,
     baseURL: siteUrl(),
     trustedOrigins: trustedOrigins(),

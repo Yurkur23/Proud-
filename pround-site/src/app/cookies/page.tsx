@@ -1,8 +1,8 @@
 import { LegalPage } from '../components/LegalPage'
 
 export const metadata = {
-  title: 'Política de Consentimento de Cookies | Pround',
-  description: 'Entenda como a Pround. usa armazenamento local e cookies.',
+  title: 'Política de Consentimento de Cookies | Proud',
+  description: 'Entenda como a Proud usa armazenamento local e cookies.',
 }
 
 export default function CookiesPage() {

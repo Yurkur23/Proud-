@@ -1,5 +1,5 @@
 -- =====================================================================
--- Pround — schema inicial (PostgreSQL puro: Neon, Railway, RDS, local...)
+-- Proud — schema inicial (PostgreSQL puro: Neon, Railway, RDS, local...)
 -- Não depende de Supabase, de extensões nem de papéis especiais.
 --
 -- Quem protege os dados agora é o servidor (rotas /api/*), que sempre filtra
@@ -74,7 +74,7 @@ create table "rateLimit" (
   "lastRequest" bigint not null
 );
 
--- ---------- Tabelas da Pround ----------
+-- ---------- Tabelas da Proud ----------
 
 create type ticket_status as enum ('open', 'in-progress', 'resolved');
 create type site_status   as enum ('online', 'setup');
@@ -175,7 +175,7 @@ begin
   insert into notifications (for_admin, title, message)
   values (true, 'Novo chamado', v_code || ' · ' || coalesce(v_site, ''));
   insert into notifications (user_id, title, message)
-  values (new.owner_id, 'Chamado criado', v_code || ' foi recebido pela Pround.');
+  values (new.owner_id, 'Chamado criado', v_code || ' foi recebido pela Proud.');
   return new;
 end;
 $$;

@@ -1,6 +1,6 @@
-# Pround — site + área do cliente
+# Proud — site + área do cliente
 
-Site institucional da Pround com **área do cliente** (login, sites, chamados de suporte e notificações),
+Site institucional da Proud com **área do cliente** (login, sites, chamados de suporte e notificações),
 formulário público "Conte sua ideia" e, para o administrador, a aba **Projetos** com todos os briefings recebidos. Next.js 16 + Tailwind 4 + **PostgreSQL** (sem Supabase).
 
 | Peça | Tecnologia |

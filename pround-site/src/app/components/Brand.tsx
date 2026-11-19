@@ -22,7 +22,7 @@ export function Brand({
         P
       </span>
       <span className="text-xl">
-        Pround<span className="text-[#C5AD87]">.</span>
+        Proud<span className="text-[#C5AD87]">.</span>
       </span>
     </Link>
   )

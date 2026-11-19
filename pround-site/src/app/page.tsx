@@ -216,7 +216,7 @@ export default function HomePage() {
               Seu site cuidado como parte do seu time.
             </h2>
             <p className="mt-7 max-w-lg leading-7 text-white/60">
-              Na área do cliente Pround, você centraliza sites, chamados e manutenções. Sem e-mails
+              Na área do cliente Proud, você centraliza sites, chamados e manutenções. Sem e-mails
               perdidos, sem ficar no escuro.
             </p>
             <Link href="/area-cliente" className="group btn btn-sand mt-9 px-6 py-4">
@@ -376,7 +376,7 @@ export default function HomePage() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[.16em] text-[#C5AD87]">
-              Cliente Pround
+              Cliente Proud
             </p>
             <div className="mt-5 flex flex-col gap-3 text-sm text-white/60">
               <Link href="/entrar" className="w-fit transition hover:translate-x-1 hover:text-white">
@@ -415,7 +415,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="relative z-10 mx-auto flex max-w-[1320px] flex-col justify-between gap-3 pt-8 text-xs text-white/40 sm:flex-row">
-          <span>© 2026 Pround. Todos os direitos reservados.</span>
+          <span>© 2026 Proud. Todos os direitos reservados.</span>
           <span>Privacidade · Termos · Cookies · LGPD</span>
         </div>
         <div
@@ -423,7 +423,7 @@ export default function HomePage() {
           className="pointer-events-none relative z-10 mx-auto mt-10 h-[clamp(4rem,13vw,13rem)] max-w-[1320px] select-none overflow-hidden"
         >
           <p className="outline-word whitespace-nowrap text-center text-[clamp(6rem,19vw,17rem)] font-semibold leading-[.8] tracking-[-.08em]">
-            Pround.
+            Proud.
           </p>
         </div>
       </footer>

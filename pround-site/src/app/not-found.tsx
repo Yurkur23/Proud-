@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Brand } from './components/Brand'
 import { Icon } from './components/Icon'
 
-export const metadata = { title: 'Página não encontrada | Pround' }
+export const metadata = { title: 'Página não encontrada | Proud' }
 
 export default function NotFound() {
   return (

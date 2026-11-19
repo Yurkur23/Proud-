@@ -3,8 +3,8 @@ import { Brand } from '../components/Brand'
 import { ProjectBriefForm } from './ProjectBriefForm'
 
 export const metadata = {
-  title: 'Conte sua ideia | Pround',
-  description: 'Compartilhe sua ideia de projeto com a Pround em poucos passos.',
+  title: 'Conte sua ideia | Proud',
+  description: 'Compartilhe sua ideia de projeto com a Proud em poucos passos.',
 }
 
 export default function ProjectPage() {

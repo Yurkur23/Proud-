@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Brand } from '../components/Brand'
 import { SignupForm } from './SignupForm'
 
-export const metadata = { title: 'Criar conta | Pround', robots: { index: false, follow: false } }
+export const metadata = { title: 'Criar conta | Proud', robots: { index: false, follow: false } }
 
 export default function SignupPage() {
   return (
@@ -20,7 +20,7 @@ export default function SignupPage() {
           <div className="absolute -bottom-24 -right-24 size-72 rounded-full border border-white/10" />
           <div className="relative z-10">
           <p className="text-xs font-bold uppercase tracking-[.16em] text-[#C5AD87]">
-            Sua área Pround
+            Sua área Proud
           </p>
           <h1 className="mt-6 text-5xl font-semibold leading-[1.02] tracking-[-.055em]">
             Acompanhe tudo com mais tranquilidade.

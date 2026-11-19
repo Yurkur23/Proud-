@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { AuthShell } from '../components/AuthShell'
 import { ResetForm } from './ResetForm'
 
-export const metadata = { title: 'Criar nova senha | Pround', robots: { index: false, follow: false } }
+export const metadata = { title: 'Criar nova senha | Proud', robots: { index: false, follow: false } }
 
 export default function ResetPasswordPage() {
   return (

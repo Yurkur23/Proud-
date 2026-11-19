@@ -34,7 +34,7 @@ const copy = {
     sites: 'Meus sites',
     tickets: 'Chamados',
     history: 'Histórico',
-    assistant: 'Assistente Pround',
+    assistant: 'Assistente Proud',
     support: 'Central de ajuda',
     settings: 'Privacidade e conta',
     newProject: 'Novo projeto',
@@ -79,7 +79,7 @@ const copy = {
     resolvedOn: 'Resolvido em',
     immediateHelp: 'Ajuda imediata para dúvidas básicas',
     assistantWelcome:
-      'Olá! Sou o assistente virtual da Pround. Respondo dúvidas comuns sobre site fora do ar, atualizações e acesso; para qualquer outra coisa, abra um chamado.',
+      'Olá! Sou o assistente virtual da Proud. Respondo dúvidas comuns sobre site fora do ar, atualizações e acesso; para qualquer outra coisa, abra um chamado.',
     assistantFallback:
       'Não tenho uma resposta pronta para isso. Abra um chamado e conte o que está acontecendo: nossa equipe responde pelo painel.',
     describeQuestion: 'Descreva sua dúvida...',
@@ -99,7 +99,7 @@ const copy = {
     faq2a: 'Cada chamado mostra o status atual e vai para o histórico quando for resolvido.',
     privacyTitle: 'Seus dados e sua privacidade',
     privacyText:
-      'Guardamos nome, e-mail, telefone, função e os dados operacionais dos seus sites e chamados, com acesso restrito à sua conta e à equipe Pround.',
+      'Guardamos nome, e-mail, telefone, função e os dados operacionais dos seus sites e chamados, com acesso restrito à sua conta e à equipe Proud.',
     privacy: 'Política de Privacidade',
     terms: 'Termos de Uso',
     cookies: 'Política de Cookies',
@@ -200,7 +200,7 @@ const copy = {
     sites: 'My Sites',
     tickets: 'Tickets',
     history: 'History',
-    assistant: 'Pround Assistant',
+    assistant: 'Proud Assistant',
     support: 'Help Center',
     settings: 'Privacy and Account',
     newProject: 'New Project',
@@ -245,7 +245,7 @@ const copy = {
     resolvedOn: 'Resolved on',
     immediateHelp: 'Immediate help for basic questions',
     assistantWelcome:
-      'Hello! I am Pround’s virtual assistant. I answer common questions about a site being down, updates and access; for anything else, open a ticket.',
+      'Hello! I am Proud’s virtual assistant. I answer common questions about a site being down, updates and access; for anything else, open a ticket.',
     assistantFallback:
       'I don’t have a ready answer for that. Open a ticket and tell us what is happening: our team replies through the dashboard.',
     describeQuestion: 'Describe your question...',
@@ -264,7 +264,7 @@ const copy = {
     faq2a: 'Each ticket shows its current status and moves to history when resolved.',
     privacyTitle: 'Your data and privacy',
     privacyText:
-      'We store your name, email, phone, role and the operational data of your sites and tickets, with access restricted to your account and the Pround team.',
+      'We store your name, email, phone, role and the operational data of your sites and tickets, with access restricted to your account and the Proud team.',
     privacy: 'Privacy Policy',
     terms: 'Terms of Use',
     cookies: 'Cookie Policy',
@@ -363,7 +363,7 @@ const copy = {
     sites: 'Mis sitios',
     tickets: 'Tickets',
     history: 'Historial',
-    assistant: 'Asistente de Pround',
+    assistant: 'Asistente de Proud',
     support: 'Centro de ayuda',
     settings: 'Privacidad y cuenta',
     newProject: 'Nuevo proyecto',
@@ -408,7 +408,7 @@ const copy = {
     resolvedOn: 'Resuelto el',
     immediateHelp: 'Ayuda inmediata para dudas básicas',
     assistantWelcome:
-      '¡Hola! Soy el asistente virtual de Pround. Respondo dudas comunes sobre sitio caído, actualizaciones y acceso; para cualquier otra cosa, abre un ticket.',
+      '¡Hola! Soy el asistente virtual de Proud. Respondo dudas comunes sobre sitio caído, actualizaciones y acceso; para cualquier otra cosa, abre un ticket.',
     assistantFallback:
       'No tengo una respuesta lista para eso. Abre un ticket y cuenta qué está ocurriendo: nuestro equipo responde desde el panel.',
     describeQuestion: 'Describe tu duda...',
@@ -427,7 +427,7 @@ const copy = {
     faq2a: 'Cada ticket muestra su estado actual y pasa al historial cuando se resuelve.',
     privacyTitle: 'Tus datos y tu privacidad',
     privacyText:
-      'Guardamos nombre, correo, teléfono, función y los datos operativos de tus sitios y tickets, con acceso restringido a tu cuenta y al equipo de Pround.',
+      'Guardamos nombre, correo, teléfono, función y los datos operativos de tus sitios y tickets, con acceso restringido a tu cuenta y al equipo de Proud.',
     privacy: 'Política de Privacidad',
     terms: 'Términos de Uso',
     cookies: 'Política de Cookies',
@@ -543,7 +543,11 @@ function localizeRecord(value: string, language: Language) {
 }
 
 function localizeNotification(notification: NotificationRecord, language: Language) {
-  if (language === 'pt-BR') return notification
+  const brandedNotification = {
+    ...notification,
+    message: notification.message.replaceAll('Pround', 'Proud'),
+  }
+  if (language === 'pt-BR') return brandedNotification
   const titleMap: Record<string, { en: string; es: string }> = {
     'Novo chamado': { en: 'New ticket', es: 'Nuevo ticket' },
     'Chamado criado': { en: 'Ticket created', es: 'Ticket creado' },
@@ -552,20 +556,20 @@ function localizeNotification(notification: NotificationRecord, language: Langua
   }
   const message =
     language === 'en'
-      ? notification.message
-          .replace('foi recebido pela Pround.', 'was received by Pround.')
+      ? brandedNotification.message
+          .replace('foi recebido pela Proud.', 'was received by Proud.')
           .replace(
             'foi movido para o histórico de manutenções.',
             'was moved to maintenance history.',
           )
-      : notification.message
-          .replace('foi recebido pela Pround.', 'fue recibido por Pround.')
+      : brandedNotification.message
+          .replace('foi recebido pela Proud.', 'fue recibido por Proud.')
           .replace(
             'foi movido para o histórico de manutenções.',
             'fue movido al historial de mantenimientos.',
           )
   return {
-    ...notification,
+    ...brandedNotification,
     title: titleMap[notification.title]?.[language] ?? notification.title,
     message,
   }

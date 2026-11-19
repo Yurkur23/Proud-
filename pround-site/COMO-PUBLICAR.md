@@ -22,7 +22,7 @@ comercial) e, opcionalmente, **Resend** (e-mail). As tabelas do banco e o admini
    A Vercel separa as linhas sozinha. Marque *Production* e *Preview* e salve.
 3. *(Se tiver domínio próprio)* adicione `NEXT_PUBLIC_SITE_URL` = `https://www.seudominio.com.br`.
 4. *(Recomendado)* e-mail: crie a conta no Resend, verifique seu domínio e adicione `RESEND_API_KEY` e
-   `EMAIL_FROM` (ex.: `Pround <contato@seudominio.com.br>`). Adicione também `ADMIN_NOTIFY_EMAIL` com o **seu e-mail real**
+   `EMAIL_FROM` (ex.: `Proud <contato@seudominio.com.br>`). Adicione também `ADMIN_NOTIFY_EMAIL` com o **seu e-mail real**
    para receber o aviso de cada novo briefing e chamado.
 
 ## 5) Deploy

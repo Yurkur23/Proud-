@@ -107,7 +107,7 @@ const dictionary: Record<string, { en: string; es: string }> = {
     en: 'We only need essential data.',
     es: 'Solo necesitamos los datos esenciales.',
   },
-  'Sua área Pround': { en: 'Your Pround area', es: 'Tu área Pround' },
+  'Sua área Proud': { en: 'Your Proud area', es: 'Tu área Proud' },
   'Acompanhe tudo com mais tranquilidade.': {
     en: 'Keep track of everything with peace of mind.',
     es: 'Acompaña todo con más tranquilidad.',
@@ -307,10 +307,10 @@ const dictionary: Record<string, { en: string; es: string }> = {
       es: '¿Tu idea no encaja exactamente en estas categorías? Perfecto. Los proyectos a medida comienzan con una buena conversación.',
     },
   'Conte o que você precisa': { en: 'Tell us what you need', es: 'Cuéntanos qué necesitas' },
-  'Na área do cliente Pround, você centraliza sites, chamados e manutenções. Sem e-mails perdidos, sem ficar no escuro.':
+  'Na área do cliente Proud, você centraliza sites, chamados e manutenções. Sem e-mails perdidos, sem ficar no escuro.':
     {
-      en: 'In the Pround client area, websites, tickets and maintenance stay together. No lost emails and no uncertainty.',
-      es: 'En el área del cliente Pround, sitios, tickets y mantenimientos están juntos. Sin correos perdidos ni incertidumbre.',
+      en: 'In the Proud client area, websites, tickets and maintenance stay together. No lost emails and no uncertainty.',
+      es: 'En el área del cliente Proud, sitios, tickets y mantenimientos están juntos. Sin correos perdidos ni incertidumbre.',
     },
   'Chamado aberto': { en: 'Open ticket', es: 'Ticket abierto' },
   'Resposta média': { en: 'Average response', es: 'Respuesta media' },
@@ -364,7 +364,7 @@ const dictionary: Record<string, { en: string; es: string }> = {
       en: 'Websites you will be proud of. Strategy, design, technology and care in one partner.',
       es: 'Sitios de los que estarás orgulloso. Estrategia, diseño, tecnología y cuidado en un solo socio.',
     },
-  'Cliente Pround': { en: 'Pround Client', es: 'Cliente Pround' },
+  'Cliente Proud': { en: 'Proud Client', es: 'Cliente Proud' },
   'Legal e privacidade': { en: 'Legal and privacy', es: 'Legal y privacidad' },
   'Política de Privacidade': { en: 'Privacy Policy', es: 'Política de Privacidad' },
   'Termos de Uso': { en: 'Terms of Use', es: 'Términos de Uso' },
@@ -374,9 +374,9 @@ const dictionary: Record<string, { en: string; es: string }> = {
   },
   'Política de Reembolso': { en: 'Refund Policy', es: 'Política de Reembolso' },
   'Preferências de cookies': { en: 'Cookie preferences', es: 'Preferencias de cookies' },
-  '© 2026 Pround. Todos os direitos reservados.': {
-    en: '© 2026 Pround. All rights reserved.',
-    es: '© 2026 Pround. Todos los derechos reservados.',
+  '© 2026 Proud. Todos os direitos reservados.': {
+    en: '© 2026 Proud. All rights reserved.',
+    es: '© 2026 Proud. Todos los derechos reservados.',
   },
   'Privacidade · Termos · Cookies · LGPD': {
     en: 'Privacy · Terms · Cookies · LGPD',
@@ -530,9 +530,9 @@ const dictionary: Record<string, { en: string; es: string }> = {
     es: 'Gracias por compartir tu idea.',
   },
   'Você envia': { en: 'You send', es: 'Tú envías' },
-  'Seu briefing chega organizado para a Pround.': {
-    en: 'Your brief arrives organized for Pround.',
-    es: 'Tu briefing llega organizado a Pround.',
+  'Seu briefing chega organizado para a Proud.': {
+    en: 'Your brief arrives organized for Proud.',
+    es: 'Tu briefing llega organizado a Proud.',
   },
   'Nós analisamos': { en: 'We analyze', es: 'Analizamos' },
   'Avaliamos objetivos, recursos e complexidade.': {

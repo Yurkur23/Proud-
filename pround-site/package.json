@@ -2,7 +2,7 @@
   "name": "pround-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Landing page Pround — venda de sites com propósito (Next.js + Tailwind)",
+  "description": "Landing page Proud — venda de sites com propósito (Next.js + Tailwind)",
   "scripts": {
     "dev": "next dev",
     "build": "node scripts/migrate.mjs --if-configured && next build",

@@ -1,5 +1,5 @@
 {
-  "name": "Pround Site (Next.js + Postgres)",
+  "name": "Proud Site (Next.js + Postgres)",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
   "postCreateCommand": "npm install",
   "forwardPorts": [3000],

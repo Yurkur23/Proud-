@@ -6,7 +6,7 @@ import { DashboardPreview } from '../components/DashboardPreview'
 import { LoginForm } from './LoginForm'
 import { getSessionUser } from '@/lib/server/http'
 
-export const metadata = { title: 'Entrar | Pround', robots: { index: false, follow: false } }
+export const metadata = { title: 'Entrar | Proud', robots: { index: false, follow: false } }
 
 export default async function LoginPage() {
   if (await getSessionUser()) redirect('/area-cliente')

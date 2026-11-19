@@ -1,5 +1,5 @@
 const phone = '5534996610451'
-const message = 'Olá, vim pelo site da Pround e gostaria de conversar sobre meu projeto.'
+const message = 'Olá, vim pelo site da Proud e gostaria de conversar sobre meu projeto.'
 
 export function WhatsAppFloat() {
   return (
@@ -7,7 +7,7 @@ export function WhatsAppFloat() {
       href={`https://wa.me/${phone}?text=${encodeURIComponent(message)}`}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Falar com a Pround pelo WhatsApp"
+      aria-label="Falar com a Proud pelo WhatsApp"
       className="fixed bottom-5 right-5 z-[80] grid size-14 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_8px_30px_rgba(0,0,0,.25)] transition hover:scale-105 hover:bg-[#20BD5A] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#25D366]"
     >
       <svg viewBox="0 0 32 32" className="size-7 fill-current" aria-hidden="true">

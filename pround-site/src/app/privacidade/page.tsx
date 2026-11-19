@@ -1,20 +1,20 @@
 import { LegalPage } from '../components/LegalPage'
 
 export const metadata = {
-  title: 'Política de Privacidade | Pround',
-  description: 'Como a Pround. trata dados pessoais e atende aos direitos previstos na LGPD.',
+  title: 'Política de Privacidade | Proud',
+  description: 'Como a Proud trata dados pessoais e atende aos direitos previstos na LGPD.',
 }
 
 export default function PrivacyPage() {
   return (
     <LegalPage
       title="Política de Privacidade"
-      summary="Esta política explica quais dados a Pround. poderá tratar, para quais finalidades e como titulares podem exercer seus direitos conforme a Lei Geral de Proteção de Dados Pessoais (LGPD)."
+      summary="Esta política explica quais dados a Proud poderá tratar, para quais finalidades e como titulares podem exercer seus direitos conforme a Lei Geral de Proteção de Dados Pessoais (LGPD)."
       sections={[
         {
           title: 'Quem controla os dados',
           paragraphs: [
-            'A Pround. atua como controladora dos dados pessoais coletados em seus canais e serviços, definindo as finalidades e os meios de tratamento. Os dados de cadastro, briefings e chamados são armazenados em banco de dados seguro, com acesso restrito à própria conta e à equipe da Pround.',
+            'A Proud atua como controladora dos dados pessoais coletados em seus canais e serviços, definindo as finalidades e os meios de tratamento. Os dados de cadastro, briefings e chamados são armazenados em banco de dados seguro, com acesso restrito à própria conta e à equipe da Proud.',
           ],
         },
         {

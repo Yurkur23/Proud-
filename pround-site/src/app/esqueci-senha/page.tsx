@@ -1,7 +1,7 @@
 import { AuthShell } from '../components/AuthShell'
 import { ForgotForm } from './ForgotForm'
 
-export const metadata = { title: 'Esqueci minha senha | Pround', robots: { index: false, follow: false } }
+export const metadata = { title: 'Esqueci minha senha | Proud', robots: { index: false, follow: false } }
 
 export default function ForgotPasswordPage() {
   return (

@@ -53,26 +53,26 @@ function layout(title: string, bodyHtml: string, button?: { label: string; url: 
   return `<!doctype html><html lang="pt-BR"><body style="margin:0;background:#E9E9E4;font-family:Arial,Helvetica,sans-serif;color:#163B43">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="padding:32px 12px"><tr><td align="center">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;background:#F7F7F3;border-radius:20px;overflow:hidden">
-<tr><td style="background:#163B43;padding:22px 28px;color:#F7F7F3;font-size:20px;font-weight:bold">Pround<span style="color:#C5AD87">.</span></td></tr>
+<tr><td style="background:#163B43;padding:22px 28px;color:#F7F7F3;font-size:20px;font-weight:bold">Proud<span style="color:#C5AD87">.</span></td></tr>
 <tr><td style="padding:32px 28px">
 <h1 style="margin:0 0 16px;font-size:22px;line-height:1.3">${escapeHtml(title)}</h1>
 <div style="font-size:15px;line-height:1.6;color:#385a61">${bodyHtml}</div>
 ${button ? `<p style="margin:28px 0 8px"><a href="${escapeHtml(button.url)}" style="display:inline-block;background:#163B43;color:#fff;text-decoration:none;font-weight:bold;padding:14px 26px;border-radius:999px">${escapeHtml(button.label)}</a></p>
 <p style="font-size:12px;color:#667A7F;word-break:break-all">Se o botão não abrir, copie este endereço no navegador:<br>${escapeHtml(button.url)}</p>` : ''}
 </td></tr>
-<tr><td style="padding:16px 28px 28px;font-size:12px;color:#667A7F">Você recebeu este e-mail pela Pround (${escapeHtml(site.replace(/^https?:\/\//, ''))}). Se não foi você, ignore esta mensagem.</td></tr>
+<tr><td style="padding:16px 28px 28px;font-size:12px;color:#667A7F">Você recebeu este e-mail pela Proud (${escapeHtml(site.replace(/^https?:\/\//, ''))}). Se não foi você, ignore esta mensagem.</td></tr>
 </table></td></tr></table></body></html>`
 }
 
 export function resetPasswordEmail(name: string, url: string) {
   return {
-    subject: 'Redefinir sua senha da Pround',
+    subject: 'Redefinir sua senha da Proud',
     html: layout('Redefinir senha', `Olá, ${escapeHtml(name.split(' ')[0] || 'tudo bem')}. Recebemos um pedido para criar uma nova senha na sua conta. O link vale por 1 hora e só funciona uma vez. Se não foi você, ignore este e-mail: sua senha continua a mesma.`, { label: 'Criar nova senha', url }),
     text: `Olá, ${name}.\n\nPara criar uma nova senha (o link vale por 1 hora):\n${url}\n\nSe não foi você, ignore esta mensagem: sua senha continua a mesma.`,
   }
 }
 
-// Avisa a equipe da Pround (ADMIN_NOTIFY_EMAIL, separados por vírgula). Nunca derruba a requisição.
+// Avisa a equipe da Proud (ADMIN_NOTIFY_EMAIL, separados por vírgula). Nunca derruba a requisição.
 export async function notifyAdmins(subject: string, lines: [string, string][]) {
   const recipients = (process.env.ADMIN_NOTIFY_EMAIL ?? '').split(',').map((s) => s.trim()).filter(Boolean)
   if (!recipients.length) return

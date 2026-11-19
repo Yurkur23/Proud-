@@ -1,15 +1,15 @@
 import { LegalPage } from '../components/LegalPage'
 
 export const metadata = {
-  title: 'Termos de Uso | Pround',
-  description: 'Condições de uso do site e dos serviços digitais da Pround.',
+  title: 'Termos de Uso | Proud',
+  description: 'Condições de uso do site e dos serviços digitais da Proud.',
 }
 
 export default function TermsPage() {
   return (
     <LegalPage
       title="Termos de Uso"
-      summary="Estes termos estabelecem as regras para uso do site, da área do cliente e dos serviços digitais oferecidos pela Pround."
+      summary="Estes termos estabelecem as regras para uso do site, da área do cliente e dos serviços digitais oferecidos pela Proud."
       sections={[
         {
           title: 'Aceite e escopo',
@@ -22,15 +22,15 @@ export default function TermsPage() {
           items: [
             'Fornecer informações verdadeiras quando iniciar uma solicitação comercial.',
             'Não tentar comprometer a segurança, disponibilidade ou integridade do site.',
-            'Não utilizar conteúdos ou marcas da Pround. sem autorização ou hipótese legal.',
+            'Não utilizar conteúdos ou marcas da Proud sem autorização ou hipótese legal.',
             'Não inserir dados sensíveis ou informações de terceiros, sem autorização, nos campos de chamados e briefings.',
           ],
         },
         {
           title: 'Contas e acesso',
           paragraphs: [
-            'Cada conta é pessoal. Você é responsável por manter a senha em sigilo e por avisar a Pround imediatamente em caso de uso não autorizado.',
-            'Em uma versão de produção, o titular será responsável por proteger suas credenciais e informar acessos suspeitos. A Pround. deverá adotar autenticação adequada e regras para suspensão, encerramento e recuperação de conta.',
+            'Cada conta é pessoal. Você é responsável por manter a senha em sigilo e por avisar a Proud imediatamente em caso de uso não autorizado.',
+            'Em uma versão de produção, o titular será responsável por proteger suas credenciais e informar acessos suspeitos. A Proud deverá adotar autenticação adequada e regras para suspensão, encerramento e recuperação de conta.',
           ],
         },
         {
@@ -43,7 +43,7 @@ export default function TermsPage() {
         {
           title: 'Propriedade intelectual',
           paragraphs: [
-            'A marca, o design e os conteúdos institucionais da Pround. são protegidos pela legislação aplicável. A titularidade e as licenças dos materiais produzidos para clientes seguirão o contrato do projeto e poderão depender do pagamento integral.',
+            'A marca, o design e os conteúdos institucionais da Proud são protegidos pela legislação aplicável. A titularidade e as licenças dos materiais produzidos para clientes seguirão o contrato do projeto e poderão depender do pagamento integral.',
           ],
         },
         {

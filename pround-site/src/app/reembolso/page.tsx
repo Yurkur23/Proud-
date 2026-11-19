@@ -1,8 +1,8 @@
 import { LegalPage } from '../components/LegalPage'
 
 export const metadata = {
-  title: 'Política de Reembolso | Pround',
-  description: 'Regras informativas para cancelamento e reembolso de serviços da Pround.',
+  title: 'Política de Reembolso | Proud',
+  description: 'Regras informativas para cancelamento e reembolso de serviços da Proud.',
 }
 
 export default function RefundPage() {
@@ -26,7 +26,7 @@ export default function RefundPage() {
         {
           title: 'Cancelamento após o início',
           paragraphs: [
-            'Após o início, a Pround. poderá reter o valor proporcional às etapas concluídas, horas trabalhadas, licenças adquiridas e custos de terceiros. O cliente receberá uma memória objetiva do cálculo e os materiais já pagos e liberados contratualmente.',
+            'Após o início, a Proud poderá reter o valor proporcional às etapas concluídas, horas trabalhadas, licenças adquiridas e custos de terceiros. O cliente receberá uma memória objetiva do cálculo e os materiais já pagos e liberados contratualmente.',
           ],
         },
         {
@@ -38,7 +38,7 @@ export default function RefundPage() {
         {
           title: 'Falha na entrega',
           paragraphs: [
-            'Se a Pround. não puder entregar o serviço por motivo sob sua responsabilidade, buscará corrigir a falha, propor alternativa equivalente ou reembolsar a parcela correspondente ao que não foi entregue, conforme o caso.',
+            'Se a Proud não puder entregar o serviço por motivo sob sua responsabilidade, buscará corrigir a falha, propor alternativa equivalente ou reembolsar a parcela correspondente ao que não foi entregue, conforme o caso.',
           ],
         },
         {
@@ -50,7 +50,7 @@ export default function RefundPage() {
         {
           title: 'Como solicitar',
           paragraphs: [
-            'A solicitação deverá identificar o projeto, o motivo e os dados necessários para conferência. A Pround. responderá com a análise, o valor elegível e o prazo estimado.',
+            'A solicitação deverá identificar o projeto, o motivo e os dados necessários para conferência. A Proud responderá com a análise, o valor elegível e o prazo estimado.',
           ],
         },
       ]}
