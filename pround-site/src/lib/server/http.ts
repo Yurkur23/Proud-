@@ -8,7 +8,8 @@ export const json = (body: unknown, status = 200) => Response.json(body, { statu
 
 // Usuário logado (ou null). O papel é lido do banco a cada requisição: promover/rebaixar vale na hora.
 export async function getSessionUser(): Promise<SessionUser | null> {
-  const session = await getAuth().api.getSession({ headers: await headers() })
+  const requestHeaders = await headers()
+  const session = await getAuth().api.getSession({ headers: requestHeaders })
   if (!session?.user) return null
   const { rows } = await getPool().query(
     `select id, name, email, phone, role from "user" where id = $1`,
