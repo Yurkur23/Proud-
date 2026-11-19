@@ -10,8 +10,17 @@ import { loadEnv } from './_env.mjs'
 import { ensureAdmin } from './seed-admin.mjs'
 
 const args = loadEnv()
+for (const name of ['ADMIN_EMAIL', 'ADMIN_PASSWORD', 'ADMIN_NAME', 'ADMIN_RESET_PASSWORD']) {
+  if (!process.env[name] && process.env[`BUILD_${name}`]) {
+    process.env[name] = process.env[`BUILD_${name}`]
+  }
+}
 // Neon: a URL "unpooled" (direta) é a indicada para migrations
-const url = process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL
+const url =
+  process.env.BUILD_DATABASE_URL_UNPOOLED ||
+  process.env.DATABASE_URL_UNPOOLED ||
+  process.env.BUILD_DATABASE_URL ||
+  process.env.DATABASE_URL
 if (!url) {
   // build local sem banco: segue em frente. Na Vercel, sem banco o build tem que falhar.
   if (args.includes('--if-configured') && !process.env.VERCEL) {

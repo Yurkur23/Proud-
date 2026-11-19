@@ -124,7 +124,7 @@ O projeto inclui `discloud.config`, `.discloudignore` e o inicializador `scripts
 upload:
 
 1. A Discloud exige **Plano Platinum ou superior** para `TYPE=site` e um subdomínio registrado. O config sugere
-   `ID=pround`; registre esse ID na sua conta antes de enviar. Se estiver ocupado, escolha outro e atualize o
+   `ID=proudlanding`; registre esse ID na sua conta antes de enviar. Se estiver ocupado, escolha outro e atualize o
    `ID` no `discloud.config`.
 2. No painel da aplicação Discloud, configure as variáveis. A Discloud exige o prefixo `BUILD_` para variáveis
    também usadas durante o build:
@@ -132,6 +132,9 @@ upload:
    - `BUILD_DATABASE_URL_UNPOOLED`: URL direta do Neon, usada para aplicar migrations durante o build.
    - `BUILD_NEXT_PUBLIC_SITE_URL`: URL HTTPS exata do subdomínio que a Discloud atribuir (a URL pode terminar
      em `.discloud.app` ou `.discloud.dev`).
+   - Se precisar criar o administrador em um banco novo durante o build, use `BUILD_ADMIN_EMAIL` e
+     `BUILD_ADMIN_PASSWORD` (opcionalmente `BUILD_ADMIN_NAME`). Não configure essas variáveis se o administrador já
+     existe no banco.
    - `BETTER_AUTH_SECRET`: o mesmo segredo de 32+ caracteres usado localmente.
    - `RESEND_API_KEY`, `EMAIL_FROM` e `ADMIN_NOTIFY_EMAIL`, se for usar envio real de e-mails.
 3. Não configure `EMAIL_TRANSPORT=log` na Discloud. O `.discloudignore` exclui arquivos `.env` locais para não

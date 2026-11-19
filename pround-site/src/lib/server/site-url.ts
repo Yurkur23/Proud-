@@ -5,7 +5,8 @@ function clean(url: string) {
 }
 
 export function siteUrl() {
-  if (process.env.NEXT_PUBLIC_SITE_URL) return clean(process.env.NEXT_PUBLIC_SITE_URL)
+  const configuredUrl = process.env.BUILD_NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_SITE_URL
+  if (configuredUrl) return clean(configuredUrl)
   if (process.env.VERCEL_ENV === 'production' && process.env.VERCEL_PROJECT_PRODUCTION_URL) {
     return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
   }
